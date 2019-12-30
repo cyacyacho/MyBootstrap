@@ -20,22 +20,34 @@
     </style>
   </head>
   <body>
-    <!--
-    グリッドレイアウトについて
-    Bootstrap でグリッドレイアウトを使うには、全体をある程度の幅を持たせて中央揃えにしてくれる、 container というクラスの中に書いていく必要があります。
-    まずは行を作りたいので、 row というクラスで実現してあげて、その中に column 用のスタイルを付けた div を用意してあげます。
-    col-12以内で指定すれば一行に収まり、それ以上なら次の行になる。
+    <!--Bootstrapのブレイクポイントの名称（折返し地点）
+    576px and up: sm(=small)
+    768px and up: md(=midium)
+    992px and up: lg(=large)
+    1200px and up: xl(=extra large)
+
     -->
     <div class="container">
       <div class="row">
-        <div class="col-8 bg-primary">1</div>
-        <div class="col-1 bg-secondary">2</div>
+        <div class="col-10 bg-primary">1</div>
+        <div class="col-2 bg-secondary">2</div>
       </div>
-      <div class="row mb-3">
-        <div class="col-6 bg-danger">4</div>
-        <div class="col-6 bg-warning">5</div>
-        <div class="col-2 bg-info">6</div>
+      <!-- <div class="row">
+        <!-- 768px（md）以上なら、カラム幅を反転する -->
+        <!-- <div class="col-2 col-md-10 bg-secondary">2</div> -->
+        <!-- <div class="col-10 col-md-2  bg-primary">1</div> -->
+      <!-- </div> -->
+      <!-- <div class="row">
+        768px（md）以上なら、非表示（d(display)-md-none)にする
+        <div class="col-10 bg-secondary">2</div>
+        <div class="col-2 d-md-none bg-primary">1</div>
+      </div> -->
+      <div class="row">
+        <!-- 基本非表示(d-none)で、md以上なら表示（d(display)-md-block)にする -->
+        <div class="col-10 bg-secondary">2</div>
+        <div class="d-none d-md-block col-md-2 bg-primary">1</div>
       </div>
+
     </div>
 
     <!-- Optional JavaScript -->
