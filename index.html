@@ -8,47 +8,56 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Doinstall App</title>
     <style>
-      .box-container {
-        width: 100px;
-        height: 100px;
-        background: #ddd;
-        margin-bottom: 5px;
+      .cover {
+        background: url(img/bg.png);
+        background-size: cover;
       }
+
 
     </style>
   </head>
   <body>
-    <!--Bootstrapのブレイクポイントの名称（折返し地点）
-    576px and up: sm(=small)
-    768px and up: md(=midium)
-    992px and up: lg(=large)
-    1200px and up: xl(=extra large)
-
-    -->
-    <div class="container">
-      <div class="row">
-        <div class="col-10 bg-primary">1</div>
-        <div class="col-2 bg-secondary">2</div>
+    <header>
+      <div class="cover text-white text-center py-5">
+        <h1 class="display-4 mb-4">Dotinstall App</h1>
+        <a ref="" class="btn btn-primary btn-lg">Get It Now!</a>
       </div>
-      <!-- <div class="row">
-        <!-- 768px（md）以上なら、カラム幅を反転する -->
-        <!-- <div class="col-2 col-md-10 bg-secondary">2</div> -->
-        <!-- <div class="col-10 col-md-2  bg-primary">1</div> -->
-      <!-- </div> -->
-      <!-- <div class="row">
-        768px（md）以上なら、非表示（d(display)-md-none)にする
-        <div class="col-10 bg-secondary">2</div>
-        <div class="col-2 d-md-none bg-primary">1</div>
-      </div> -->
-      <div class="row">
-        <!-- 基本非表示(d-none)で、md以上なら表示（d(display)-md-block)にする -->
-        <div class="col-10 bg-secondary">2</div>
-        <div class="d-none d-md-block col-md-2 bg-primary">1</div>
-      </div>
+    </header>
+    <main>
+      <section class="py-5">
+        <h2 class="text-center mb-5">Features</h2>
+        <div class="container">
+          <div class="mb-5 row">
+            <div class="col-sm-8">
+              <h3>Awsome</h3>
+              <p>
+                Hello. Hello.Hello. Hello.Hello. Hello.Hello. Hello.Hello. Hello.Hello. Hello.Hello. Hello.Hello. Hello.Hello. Hello.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <img src="img/phone.png" class="w-100 rounded-circle">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-8 order-sm-2">
+              <h3>Awsome</h3>
+              <p>
+                Hello. Hello.Hello. Hello.Hello. Hello.Hello. Hello.Hello. Hello.Hello. Hello.Hello. Hello.Hello. Hello.Hello. Hello.
+              </p>
+            </div>
+            <div class="col-sm-4 order-sm-1">
+              <img src="img/movie.png" class="w-100 rounded-circle">
+            </div>
+          </div>
+        </div>
+      </section>
 
-    </div>
+    </main>
+    <footer>
+
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
